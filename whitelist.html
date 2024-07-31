@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelist - Servidor FiveM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo do Servidor">
+            <h1>Whitelist</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="venda.html">Vendas</a></li>
+                    <li><a href="whitelist.html">Whitelist</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="whitelist-form">
+            <h2>Formulário de Inscrição</h2>
+            <form id="whitelist-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="question1">Qual é a capital da França?</label>
+                <select id="question1" name="question1" required>
+                    <option value="">Selecione</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Londres">Londres</option>
+                    <option value="Roma">Roma</option>
+                </select>
+                <span id="question1-feedback" class="feedback"></span>
+
+                <label for="question2">Qual é a fórmula da água?</label>
+                <select id="question2" name="question2" required>
+                    <option value="">Selecione</option>
+                    <option value="H2O">H2O</option>
+                    <option value="CO2">CO2</option>
+                    <option value="O2">O2</option>
+                </select>
+                <span id="question2-feedback" class="feedback"></span>
+
+                <label for="reason">Por que você quer se juntar ao nosso servidor?</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+                
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Nosso Servidor FiveM. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
